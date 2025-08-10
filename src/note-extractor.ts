@@ -1,6 +1,6 @@
 import { writeFileSync } from "fs";
 import mime from "mime-types";
-import { NoteResource } from "./note.types";
+import { NoteResource } from "./api.types";
 import { note } from "./test-data";
 
 function normalizeNoteContent(content: string, resources?: NoteResource[]) {

@@ -1,6 +1,6 @@
-import { NoteResponse } from "./note.types";
+import { NoteDetailsResponse } from "./api.types";
 
-export const note: NoteResponse = {
+export const note: NoteDetailsResponse = {
   result: "ok",
   retriable: false,
   code: 0,
@@ -50,4 +50,187 @@ export const note: NoteResponse = {
   },
   description: "成功",
   ts: 1754816805525,
+};
+
+export const notesInformations = {
+  result: "ok",
+  retriable: false,
+  code: 0,
+  data: {
+    entries: [
+      {
+        snippet: "Testowa treść ",
+        modifyDate: 1754671142336,
+        colorId: 0,
+        subject: "",
+        alertDate: 0,
+        type: "note",
+        folderId: 0,
+        setting: {
+          themeId: 0,
+          stickyTime: 0,
+          version: 0,
+        },
+        deleteTime: 0,
+        alertTag: 0,
+        id: "47170561387274240",
+        tag: "47170565033304160",
+        createDate: 1754671125778,
+        status: "normal",
+        extraInfo:
+          '{"title":"Notatka tekstowa\\n","note_content_type":"common","mind_content":"","mind_content_plain_text":""}',
+      },
+      {
+        snippet: "Treść notatki ",
+        modifyDate: 1754671203427,
+        colorId: 0,
+        subject: "",
+        alertDate: 0,
+        type: "note",
+        folderId: "47170569283182721",
+        setting: {
+          themeId: 0,
+          stickyTime: 0,
+          version: 0,
+        },
+        deleteTime: 0,
+        alertTag: 0,
+        id: "47170570929840256",
+        tag: "47170571565408256",
+        createDate: 1754671198898,
+        status: "normal",
+        extraInfo:
+          '{"title":"Notatka w folderze ","note_content_type":"common","mind_content":"","mind_content_plain_text":""}',
+      },
+      {
+        snippet: "",
+        modifyDate: 1754671472789,
+        colorId: 0,
+        subject: "",
+        alertDate: 0,
+        type: "note",
+        folderId: 0,
+        setting: {
+          themeId: 0,
+          stickyTime: 0,
+          version: 0,
+        },
+        deleteTime: 0,
+        alertTag: 0,
+        id: "47170589013188608",
+        tag: "47170606892064896",
+        createDate: 1754671336740,
+        status: "normal",
+        extraInfo:
+          '{"title":"Mapa myśli","note_content_type":"mind","mind_content":"\u003CMiMind Prdfix\u003E{\\"content\\":\\"{\\\\\\"currentPage\\\\\\":\\\\\\"\\/overview\\\\\\",\\\\\\"data\\\\\\":{\\\\\\"id\\\\\\":\\\\\\"root\\\\\\",\\\\\\"label\\\\\\":\\\\\\"Mapa myśli\\\\\\",\\\\\\"type\\\\\\":\\\\\\"root-node\\\\\\",\\\\\\"parentId\\\\\\":\\\\\\"ROOT\\\\\\",\\\\\\"collapsed\\\\\\":false,\\\\\\"children\\\\\\":[{\\\\\\"id\\\\\\":\\\\\\"c3e8aa83-79fd-4e7d-a1e2-6616b8d55082\\\\\\",\\\\\\"label\\\\\\":\\\\\\"Testowy element mapy myśli \\\\\\",\\\\\\"parentId\\\\\\":\\\\\\"root\\\\\\",\\\\\\"children\\\\\\":[{\\\\\\"id\\\\\\":\\\\\\"2da8eed3-829f-497b-8aef-7bdd9f450912\\\\\\",\\\\\\"label\\\\\\":\\\\\\"Pod element mapy myśli \\\\\\",\\\\\\"parentId\\\\\\":\\\\\\"c3e8aa83-79fd-4e7d-a1e2-6616b8d55082\\\\\\",\\\\\\"collapsed\\\\\\":false,\\\\\\"children\\\\\\":[],\\\\\\"level\\\\\\":2,\\\\\\"labelWidth\\\\\\":168.31787109375,\\\\\\"labelHeight\\\\\\":22,\\\\\\"index\\\\\\":0,\\\\\\"depth\\\\\\":2,\\\\\\"descendantsAndSelfCount\\\\\\":1,\\\\\\"nodeHeight\\\\\\":68,\\\\\\"x\\\\\\":504.671875,\\\\\\"y\\\\\\":0,\\\\\\"type\\\\\\":\\\\\\"tree-node\\\\\\",\\\\\\"style\\\\\\":{\\\\\\"draging\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"red\\\\\\",\\\\\\"path-shape\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"transparent\\\\\\"},\\\\\\"text-shape\\\\\\":{\\\\\\"fillOpacity\\\\\\":0.6}},\\\\\\"rootFocused\\\\\\":{},\\\\\\"hover\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"#FFFBF1\\\\\\",\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1},\\\\\\"rootHover\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1}},\\\\\\"contextStack\\\\\\":[{\\\\\\"branch\\\\\\":0}],\\\\\\"expandAnimateFirstFrame\\\\\\":false},{\\\\\\"id\\\\\\":\\\\\\"881f70d0-599b-4a28-ab1f-a936b41e3abb\\\\\\",\\\\\\"parentId\\\\\\":\\\\\\"c3e8aa83-79fd-4e7d-a1e2-6616b8d55082\\\\\\",\\\\\\"label\\\\\\":\\\\\\"Rozgałęzienie \\\\\\",\\\\\\"labelWidth\\\\\\":97.5732421875,\\\\\\"labelHeight\\\\\\":22,\\\\\\"collapsed\\\\\\":false,\\\\\\"children\\\\\\":[],\\\\\\"index\\\\\\":1,\\\\\\"depth\\\\\\":2,\\\\\\"descendantsAndSelfCount\\\\\\":1,\\\\\\"nodeHeight\\\\\\":68,\\\\\\"x\\\\\\":504.671875,\\\\\\"y\\\\\\":68,\\\\\\"type\\\\\\":\\\\\\"tree-node\\\\\\",\\\\\\"style\\\\\\":{\\\\\\"draging\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"red\\\\\\",\\\\\\"path-shape\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"transparent\\\\\\"},\\\\\\"text-shape\\\\\\":{\\\\\\"fillOpacity\\\\\\":0.6}},\\\\\\"rootFocused\\\\\\":{},\\\\\\"hover\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"#FFFBF1\\\\\\",\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1},\\\\\\"rootHover\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1}},\\\\\\"contextStack\\\\\\":[{\\\\\\"branch\\\\\\":0}],\\\\\\"custom_containerWidth\\\\\\":200,\\\\\\"level\\\\\\":2}],\\\\\\"collapsed\\\\\\":false,\\\\\\"level\\\\\\":1,\\\\\\"labelWidth\\\\\\":200,\\\\\\"labelHeight\\\\\\":44,\\\\\\"index\\\\\\":0,\\\\\\"depth\\\\\\":1,\\\\\\"descendantsAndSelfCount\\\\\\":3,\\\\\\"nodeHeight\\\\\\":90,\\\\\\"x\\\\\\":198.671875,\\\\\\"y\\\\\\":12,\\\\\\"type\\\\\\":\\\\\\"tree-node\\\\\\",\\\\\\"style\\\\\\":{\\\\\\"draging\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"red\\\\\\",\\\\\\"path-shape\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"transparent\\\\\\"},\\\\\\"text-shape\\\\\\":{\\\\\\"fillOpacity\\\\\\":0.6}},\\\\\\"rootFocused\\\\\\":{},\\\\\\"hover\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"#FFFBF1\\\\\\",\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1},\\\\\\"rootHover\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1}},\\\\\\"contextStack\\\\\\":[{\\\\\\"branch\\\\\\":0}],\\\\\\"context\\\\\\":{\\\\\\"branch\\\\\\":0}},{\\\\\\"id\\\\\\":\\\\\\"8d755d6d-9f48-45bb-8b76-8fd0668afbd4\\\\\\",\\\\\\"label\\\\\\":\\\\\\"Kolejny element \\\\\\",\\\\\\"parentId\\\\\\":\\\\\\"root\\\\\\",\\\\\\"collapsed\\\\\\":false,\\\\\\"children\\\\\\":[{\\\\\\"id\\\\\\":\\\\\\"f8c52911-5c5a-4130-baa6-e2b98c3d755c\\\\\\",\\\\\\"label\\\\\\":\\\\\\"Pod pod element\\\\\\",\\\\\\"parentId\\\\\\":\\\\\\"8d755d6d-9f48-45bb-8b76-8fd0668afbd4\\\\\\",\\\\\\"collapsed\\\\\\":false,\\\\\\"children\\\\\\":[],\\\\\\"level\\\\\\":2,\\\\\\"labelWidth\\\\\\":72.40298016394495,\\\\\\"labelHeight\\\\\\":44,\\\\\\"index\\\\\\":0,\\\\\\"depth\\\\\\":2,\\\\\\"descendantsAndSelfCount\\\\\\":1,\\\\\\"nodeHeight\\\\\\":90,\\\\\\"x\\\\\\":422.96875,\\\\\\"y\\\\\\":136,\\\\\\"type\\\\\\":\\\\\\"tree-node\\\\\\",\\\\\\"style\\\\\\":{\\\\\\"draging\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"red\\\\\\",\\\\\\"path-shape\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"transparent\\\\\\"},\\\\\\"text-shape\\\\\\":{\\\\\\"fillOpacity\\\\\\":0.6}},\\\\\\"rootFocused\\\\\\":{},\\\\\\"hover\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"#FFFBF1\\\\\\",\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1},\\\\\\"rootHover\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1}},\\\\\\"contextStack\\\\\\":[{\\\\\\"branch\\\\\\":1}],\\\\\\"custom_containerWidth\\\\\\":72.40298016394495}],\\\\\\"level\\\\\\":1,\\\\\\"labelWidth\\\\\\":118.296875,\\\\\\"labelHeight\\\\\\":22,\\\\\\"index\\\\\\":1,\\\\\\"depth\\\\\\":1,\\\\\\"descendantsAndSelfCount\\\\\\":2,\\\\\\"nodeHeight\\\\\\":68,\\\\\\"x\\\\\\":198.671875,\\\\\\"y\\\\\\":158,\\\\\\"type\\\\\\":\\\\\\"tree-node\\\\\\",\\\\\\"style\\\\\\":{\\\\\\"draging\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"red\\\\\\",\\\\\\"path-shape\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"transparent\\\\\\"},\\\\\\"text-shape\\\\\\":{\\\\\\"fillOpacity\\\\\\":0.6}},\\\\\\"rootFocused\\\\\\":{},\\\\\\"hover\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"#FFFBF1\\\\\\",\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1},\\\\\\"rootHover\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1}},\\\\\\"contextStack\\\\\\":[{\\\\\\"branch\\\\\\":1}],\\\\\\"context\\\\\\":{\\\\\\"branch\\\\\\":1}}],\\\\\\"nodeHeight\\\\\\":70,\\\\\\"x\\\\\\":0,\\\\\\"y\\\\\\":114,\\\\\\"depth\\\\\\":0,\\\\\\"style\\\\\\":{\\\\\\"draging\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"rgba(249, 179, 0, 0.2)\\\\\\",\\\\\\"path-shape\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"transparent\\\\\\"},\\\\\\"text-shape\\\\\\":{\\\\\\"fillOpacity\\\\\\":0.6}},\\\\\\"rootFocused\\\\\\":{},\\\\\\"hover\\\\\\":{\\\\\\"fill\\\\\\":\\\\\\"#FFFBF1\\\\\\",\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1},\\\\\\"rootHover\\\\\\":{\\\\\\"stroke\\\\\\":\\\\\\"rgba(255, 187, 0, 0.3)\\\\\\",\\\\\\"lineWidth\\\\\\":1}},\\\\\\"contextStack\\\\\\":[],\\\\\\"custom_containerWidth\\\\\\":200,\\\\\\"level\\\\\\":0,\\\\\\"labelWidth\\\\\\":92.671875,\\\\\\"labelHeight\\\\\\":24,\\\\\\"index\\\\\\":0,\\\\\\"descendantsAndSelfCount\\\\\\":6,\\\\\\"mindMatrix\\\\\\":{\\\\\\"0\\\\\\":1.132450053899438,\\\\\\"1\\\\\\":0,\\\\\\"2\\\\\\":0,\\\\\\"3\\\\\\":0,\\\\\\"4\\\\\\":1.132450053899438,\\\\\\"5\\\\\\":0,\\\\\\"6\\\\\\":-347.2681349819233,\\\\\\"7\\\\\\":301.0983754135174,\\\\\\"8\\\\\\":1}},\\\\\\"userInput\\\\\\":\\\\\\"Testowy element mapy myśli Pod element mapy myśli Rozgałęzienie Kolejny element Pod pod element\\\\\\"}\\",\\"isMap\\":false,\\"thumbnail\\":\\"\\",\\"title\\":\\"Mapa myśli\\"}","mind_content_plain_text":"Testowy element mapy myśli Pod element mapy myśli Rozgałęzienie Kolejny element Pod pod element"}',
+      },
+      {
+        snippet:
+          '☺ 6291548318._Sykp7iY7eM8FB4AJ1f3kQ\u003C0/\u003E\u003C/\u003E\nJakaś notatka z obrazkiem\n\u003Cinput type="checkbox" /\u003ECheckboxy\n\u003Cinput type="checkbox" checked="true" /\u003ECheckboxy \n\u003Cinput type="checkbox" /\u003ECheckboxy \n☺ 6291548318.YnrAtkOjhD4YVjKBADqEBw\u003C0/\u003E\u003C/\u003E\n\u003Cb\u003ETu formatowanie tekstu \u003C/b\u003E\n\u003Csize\u003EWiększa czcionka \u003C/size\u003E\n\u003Cmid-size\u003ECiut większa czcionka \u003C/mid-size\u003E\n\u003Csound fileid="6291548318.v8fFjVuUR7bEoy5HR4BwRg" /\u003E\n',
+        modifyDate: 1754825898037,
+        colorId: 0,
+        subject: "",
+        alertDate: 0,
+        type: "note",
+        folderId: 0,
+        setting: {
+          data: [
+            {
+              digest: "1d8a1685388bd112b8f19f79abc8237ee62f9ee3",
+              mimeType: "image/jpeg",
+              fileId: "6291548318._Sykp7iY7eM8FB4AJ1f3kQ",
+            },
+            {
+              digest: "a7d6336014216ab211c425f7947688aa364e95f6",
+              mimeType: "image/png",
+              fileId: "6291548318.YnrAtkOjhD4YVjKBADqEBw",
+            },
+            {
+              digest: "d79eff08efef1ed073db7cd14a03870e66298250.mp3",
+              mimeType: "audio/mp3",
+              fileId: "6291548318.v8fFjVuUR7bEoy5HR4BwRg",
+            },
+          ],
+          themeId: 13,
+          stickyTime: 0,
+          version: 0,
+        },
+        deleteTime: 0,
+        alertTag: 0,
+        id: "47170609743142913",
+        tag: "47190847668756480",
+        createDate: 1754671490214,
+        status: "normal",
+        extraInfo:
+          '{"title":"Super notatka ","note_content_type":"common","mind_content":"","mind_content_plain_text":""}',
+      },
+      {
+        snippet:
+          '\u003Ctext indent="1"\u003E\u003Cright\u003EPrzypięta notatka bez tytułu \u003C/right\u003E\u003C/text\u003E',
+        modifyDate: 1754835471117,
+        colorId: 0,
+        subject: "",
+        alertDate: 0,
+        type: "note",
+        folderId: 0,
+        setting: {
+          themeId: 0,
+          stickyTime: 1754671175296,
+          version: 0,
+        },
+        id: "47170565035008128",
+        tag: "47192100998094944",
+        createDate: 1754671153340,
+        status: "normal",
+        extraInfo:
+          '{"note_content_type":"common","mind_content_plain_text":"","title":"","mind_content":""}',
+      },
+    ],
+    folders: [
+      {
+        snippet: "",
+        modifyDate: 1754671203440,
+        colorId: 0,
+        subject: "Nowy folder",
+        alertDate: 0,
+        type: "folder",
+        folderId: 0,
+        setting: {
+          themeId: 0,
+          stickyTime: 0,
+          version: 0,
+        },
+        deleteTime: 0,
+        alertTag: 0,
+        id: "47170569283182721",
+        tag: "47170571699232896",
+        createDate: 1754671186000,
+        status: "normal",
+      },
+      {
+        snippet: "",
+        modifyDate: 1754671247445,
+        colorId: 0,
+        subject: "przypięty folder",
+        alertDate: 0,
+        type: "folder",
+        folderId: 0,
+        setting: {
+          themeId: 0,
+          stickyTime: 1754671219170,
+          version: 0,
+        },
+        deleteTime: 0,
+        alertTag: 0,
+        id: "47170572895920160",
+        tag: "47170577295220832",
+        createDate: 1754671213000,
+        status: "normal",
+      },
+    ],
+    lastPage: true,
+    syncTag: "47192100998094944",
+  },
+  description: "成功",
+  ts: 1754835740743,
 };
